@@ -17,7 +17,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   using-resuable-wf:
-    uses: pinkesh-ceq/resuable-workflows-github-actions/.github/workflows/Reusable-WF.yml@main
+    uses: pinkesh-ceq/resuable-workflows-github-actions/.github/workflows/Resuable-WF.yml@main
     with:
       name: Demo
       
