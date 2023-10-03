@@ -1,0 +1,26 @@
+name: Resuable workflow
+
+on:
+  workflow_call:
+    inputs:
+      name:
+        required: true
+        type: string
+    secrets:
+      password:
+        required: false
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build project
+        run: echo Project built
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test project
+        run: echo Testing done
+
+    
